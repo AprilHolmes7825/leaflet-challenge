@@ -1,15 +1,8 @@
 // Creating the map object
 let myMap = L.map("map", {
     center: [37.6, -97.3],
-    setView: ([37.6, -97.3], 7),
     zoom: 5
 });
-
-
-  // let myMap = L.map("map", {
-  //   setView: [37.6, -97.3],
-  //   zoom: 5
-  // });
 
   // Adding the tile layer
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
@@ -19,7 +12,6 @@ let myMap = L.map("map", {
   // Store the API query variables.
   let baseURL = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_week.geojson";
 
-  
   // Assemble the API query URL.
   let url = baseURL;
   
